@@ -17,6 +17,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.alexammentor.core.navigation.Screen
+import com.example.alexammentor.presentation.scan.ScanScreen
 import com.example.alexammentor.ui.theme.AlExamMentorTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -38,7 +39,15 @@ class MainActivity : ComponentActivity() {
                             DashboardScreen(onNavigateToOCR = { navController.navigate(Screen.OCR.route) })
                         }
                         composable(Screen.OCR.route) {
-                            OCRScreen(onTextExtracted = { /* Navigate to Question Gen */ })
+                            ScanScreen(
+                                onNavigateToResult = { text ->
+                                    navController.navigate(Screen.QuestionGen.route + "?text=$text")
+                                }
+                            )
+                        }
+                        composable(Screen.QuestionGen.route + "?text={text}") {
+                            // TODO: Implement QuestionGenScreen
+                            Text("Extracted Text: ${it.arguments?.getString("text")}")
                         }
                     }
                 }
@@ -55,9 +64,4 @@ fun DashboardScreen(onNavigateToOCR: () -> Unit) {
             Text(text = "Go to OCR")
         }
     }
-}
-
-@Composable
-fun OCRScreen(onTextExtracted: (String) -> Unit) {
-    Text(text = "OCR Screen", modifier = Modifier.padding(16.dp))
 }

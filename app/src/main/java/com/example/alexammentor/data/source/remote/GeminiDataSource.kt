@@ -14,16 +14,17 @@ class GeminiDataSource @Inject constructor() {
 
     private val generativeModel = GenerativeModel(
         modelName = "gemini-pro",
-        apiKey = BuildConfig.GEMINI_API_KEY
+        apiKey = BuildConfig.GEMINI_API_KEY,
+        systemInstruction = content { text(AiPrompts.SYSTEM_PROMPT) }
     )
 
     suspend fun generateQuestions(content: String, count: Int, difficulty: String): String? = withContext(Dispatchers.IO) {
         try {
             val response = generativeModel.generateContent(
-                AiPrompts.generateQuestionPrompt(content, count, difficulty)
+                AiPrompts.generateQuestionPrompt(content, count, difficulty, AiPrompts.PromptType.EXAM_QUESTIONS)
             )
             response.text
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             null
         }
     }
