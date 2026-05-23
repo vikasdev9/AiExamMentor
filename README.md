@@ -1,14 +1,20 @@
-# AlExamMentor - AI-Powered Exam Preparation Platform
+<div align="center">
+  <h1>🎓 AlExamMentor</h1>
+  <p><b>Revolutionizing Exam Preparation with Gemini AI & ML Kit</b></p>
 
-![Kotlin](https://img.shields.io/badge/Kotlin-2.1.0-blue.svg?style=flat&logo=kotlin)
-![Compose](https://img.shields.io/badge/Jetpack_Compose-2024.02.01-green.svg?style=flat&logo=jetpackcompose)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+  ![Kotlin](https://img.shields.io/badge/Kotlin-2.1.0-blue.svg?style=flat&logo=kotlin)
+  ![Compose](https://img.shields.io/badge/Jetpack_Compose-2024.02.01-green.svg?style=flat&logo=jetpackcompose)
+  ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+</div>
+
+---
 
 ## 📸 Screenshots
 
-| | | |
-|---|---|---|
+| Splash Screen | Onboarding | Scan Material |
+|:---:|:---:|:---:|
 | <img src="screenshots/splashscreenexam.png" width="280"> | <img src="screenshots/onboarding.png" width="280"> | <img src="screenshots/scanfile.png" width="280"> |
+| **Home Dashboard** | **AI Quiz Mode** | |
 | <img src="screenshots/dashboard.png" width="280"> | <img src="screenshots/quizscreen.png" width="280"> | |
 
 AlExamMentor is an enterprise-grade Android application designed to revolutionize student learning. It leverages cutting-edge AI (Gemini Pro) and OCR (ML Kit) to transform study materials into interactive quizzes, revision notes, and flashcards.
