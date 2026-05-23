@@ -6,11 +6,10 @@
 
 ## 📸 Screenshots
 
-| | |
-|---|---|
-| <img src="screenshots/splashscreenexam.png" width="400"> | <img src="screenshots/onboarding.png" width="400"> |
-| <img src="screenshots/scanfile.png" width="400"> | <img src="screenshots/dashboard.png" width="400"> |
-| <img src="screenshots/quizscreen.png" width="400"> | |
+| | | |
+|---|---|---|
+| <img src="screenshots/splashscreenexam.png" width="280"> | <img src="screenshots/onboarding.png" width="280"> | <img src="screenshots/scanfile.png" width="280"> |
+| <img src="screenshots/dashboard.png" width="280"> | <img src="screenshots/quizscreen.png" width="280"> | |
 
 AlExamMentor is an enterprise-grade Android application designed to revolutionize student learning. It leverages cutting-edge AI (Gemini Pro) and OCR (ML Kit) to transform study materials into interactive quizzes, revision notes, and flashcards.
 
