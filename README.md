@@ -4,6 +4,14 @@
 ![Compose](https://img.shields.io/badge/Jetpack_Compose-2024.02.01-green.svg?style=flat&logo=jetpackcompose)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+## 📸 Screenshots
+
+| | |
+|---|---|
+| <img src="screenshots/splashscreenexam.png" width="400"> | <img src="screenshots/onboarding.png" width="400"> |
+| <img src="screenshots/scanfile.png" width="400"> | <img src="screenshots/dashboard.png" width="400"> |
+| <img src="screenshots/quizscreen.png" width="400"> | |
+
 AlExamMentor is an enterprise-grade Android application designed to revolutionize student learning. It leverages cutting-edge AI (Gemini Pro) and OCR (ML Kit) to transform study materials into interactive quizzes, revision notes, and flashcards.
 
 ---
